@@ -1,6 +1,4 @@
-import "./style.css";
-
-const Header =()=>{
+const Body =()=>{
     return(
         <header className="header">
             <div className="header_wrap">
@@ -16,4 +14,4 @@ const Header =()=>{
         </header>
     )
 }
-export default Header;
+export default Body;
