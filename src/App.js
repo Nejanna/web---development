@@ -10,7 +10,6 @@ function App() {
     { id: 1, name: 'Носочки', selected: false },
     { id: 2, name: 'Штани', selected: false },
     { id: 3, name: 'Кофта', selected: false },
-    // Додайте інші товари за потреби
   ]);
 
   const CheckboxChange = (id) => {
