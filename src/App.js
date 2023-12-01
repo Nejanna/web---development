@@ -25,7 +25,7 @@ function App() {
       <Body />
       <div>
         <h1>Список товарів</h1>
-        <List products={products} CheckboxChange={setProducts} />
+        <List products={products} CheckboxChange={CheckboxChange} />
         </div>
       <Footer /> 
 
