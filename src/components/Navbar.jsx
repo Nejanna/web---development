@@ -9,9 +9,8 @@ const Navbar = () => {
                 <dir >
                 <ul className="nav-list">
                     <li className="nav-list_item"><a href="./index.html" className="">Home</a></li>
-                    <li className="nav-list_item"><a href="./index.html" className="">Contacts</a></li>
-                    <li className="nav-list_item"><a href="./index.html" className=""></a>Projects</li>
-                
+                    <li className="nav-list_item"><a href="/products" className="">Products</a></li>
+                                  
                 </ul>
                 </dir>
             </dir>
