@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
+import { useMyStatus} from '../hooks/useMyStatus';
+import {useMyConsoleLogger} from '../hooks/useMyConsoleLogger';
 
 const CommentForm = ({ onAddComment }) => {
   const [newComment, setNewComment] = useState('');
+  const [status, setStatus] = useMyStatus('Активний');
+  useMyConsoleLogger(newComment);
 
   const handleInputChange = (event) => {
     setNewComment(event.target.value);
@@ -12,6 +16,7 @@ const CommentForm = ({ onAddComment }) => {
     if (newComment.trim() !== '') {
       onAddComment(newComment);
       setNewComment('');
+      setStatus('Коментар додано'); 
     }
   };
 
@@ -25,8 +30,13 @@ const CommentForm = ({ onAddComment }) => {
           onChange={handleInputChange}
         />
       </label>
-      <button type="submit">Додати</button>
+      <button type="submit">Відправити</button>
+      <p>Статус: {status}</p>
     </form>
   );
 };
+
 export default CommentForm;
+
+
+

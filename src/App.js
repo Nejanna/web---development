@@ -4,7 +4,8 @@ import ProductsPage from './prod_page/ProductsPage';
 import Body from './components/Body';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-
+import FuncComponent from './components/compon_lab4/FuncComponent';
+import ClassComponent from './components/compon_lab4/ClassComponent';
 import React, { useState } from 'react';
 
 function App() {
@@ -25,6 +26,8 @@ function MainLayout() {
     <>
       <Navbar />
       <Body />
+      <FuncComponent />
+      <ClassComponent />
       <Footer />
     </>
   );
