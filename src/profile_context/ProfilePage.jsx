@@ -2,6 +2,7 @@
 //Відобразити використання декількох контекстів 
 import React, { useState, useEffect } from 'react';
 import { useUserContext } from './ProfileContext';
+import '../css/userstyle.css'
 
 const UserProfilePage = () => {
   // Отримання user та setUser з контексту
@@ -40,7 +41,7 @@ const UserProfilePage = () => {
   return (
     <div className="user-profile">
       <h2>Ваш Профіль</h2>
-      <label>
+      <label className='user-name'>
         Ім'я:
         <input
           type="text"
@@ -49,7 +50,7 @@ const UserProfilePage = () => {
           onChange={handleInputChange}
         />
       </label>
-      <label>
+      <label className='user-email'>
         Email:
         <input
           type="text"
@@ -58,7 +59,7 @@ const UserProfilePage = () => {
           onChange={handleInputChange}
         />
       </label>
-      <label>
+      <label className='user-adress'>
         Адеса:
         <input
           type="text"
@@ -67,7 +68,7 @@ const UserProfilePage = () => {
           onChange={handleInputChange}
         />
       </label>
-      <label>
+      <label className='user-number'>
         Номер телефону:
         <input
           type="text"

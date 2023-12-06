@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import "../../index.css";
 class ClassComponent extends React.Component{
     constructor (props){
         super(props);
@@ -20,8 +20,8 @@ class ClassComponent extends React.Component{
         return(
             <div>
                 <h1>{this.state.count}</h1>
-                <button onClick={this.increment}>Increment</button>
-                <button onClick={this.decrement}>Decrement</button>
+                <button className='btn' onClick={this.increment}>Increment</button>
+                <button className='btn' onClick={this.decrement}>Decrement</button>
             </div>
         )
     }

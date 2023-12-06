@@ -7,32 +7,49 @@ import { UserProvider } from './profile_context/ProfileContext';
 import Body from './components/Body';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import FuncComponent from './components/compon_lab4/FuncComponent';
-import ClassComponent from './components/compon_lab4/ClassComponent';
+import WindowDialog from './components/WindowDialog';
 import React, { useState } from 'react';
 
 //лабораторна 5 створено кілька посилань за допомогою react-router
 function App() {
+  const [dialogVisible, setDialogVisible] = useState(false);
+
+  const handleOpenDialog = () => {
+    setDialogVisible(true);
+  };
+
+  const handleCloseDialog = () => {
+    setDialogVisible(false);
+  };
   return (
     <div className="App">
       <Router>
         <Routes>
           <Route path="/" element={<MainLayout />} />
-          <Route path="/products" element={<ProductsProvider><ProductsPage /></ProductsProvider>} />
-          <Route path="/user" element={<UserProvider><ProfilePage /></UserProvider>} />
+          <Route
+            path="/products"
+            element={
+              <ProductsProvider>
+                <Navbar />
+                <ProductsPage />
+              <>
+                <button onClick={handleOpenDialog}>Open Dialog</button>
+                <WindowDialog open={dialogVisible} onClose={handleCloseDialog} />
+              </>
+              </ProductsProvider>
+            }
+          />
+          <Route path="/user" element={<UserProvider><Navbar /><ProfilePage /></UserProvider>} />
         </Routes>
       </Router>
     </div>
   );
 }
-
 function MainLayout() {
   return (
     <>
       <Navbar />
       <Body />
-      <FuncComponent />
-      <ClassComponent />
       <Footer />
     </>
   );

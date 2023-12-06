@@ -1,0 +1,62 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; 
+}
+
+.nav {
+  background-color: #000000;
+  padding: 10px 0;
+}
+
+.nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.logo {
+  color: aqua;
+}
+
+.content-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list_item {
+  margin-left: 20px;
+}
+
+.nav-list_item a {
+  text-decoration: none;
+  color: rgb(244, 175, 175);
+  padding: 10px 20px;
+  border-radius: 90px;
+}
+
+.nav-list_item a:hover {
+  background-color: rgb(137, 123, 123);
+}
+
+/* Медіазапит для більшого адаптивного дизайну */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    padding: 0; 
+  }
+
+  .nav-list_item {
+    margin-left: 10px; 
+  }
+
+  .nav-list_item a {
+    padding: 10px; 
+  }
+}

@@ -1,0 +1,55 @@
+.header{
+    padding: 40px 0;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fon.jpg');
+    background-size: cover; 
+    background-position: center;
+    color: var(--header-text);
+    text-align: center;
+}
+.header_wrap{
+    padding: 0 15px;
+    max-width: 660px;
+}
+.header_title{
+    margin-bottom: 20px;
+    background-color: rgba(152, 142, 142, 0.5);
+    border-radius: 30px;
+}
+.header_title strong {
+    font-size: 60px;
+    font-weight: normal;
+}
+.footer {
+    background-color: #898989; 
+    padding: 20px; 
+    max-height: 200px; 
+    height: 100%; 
+  }
+  
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    height: 100%; 
+  }
+  
+  .footer_wrapper {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    height: 100%;
+  }
+  
+  
+  .FuncComponent {
+    width: 50%;
+  }
+  
+  .ClassComponent {
+    width: 50%; 
+  }
+  
+  

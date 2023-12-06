@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useMyStatus} from '../hooks/useMyStatus';
 import {useMyConsoleLogger} from '../hooks/useMyConsoleLogger';
-
+import "../css/prodstyle.css";
 const CommentForm = ({ onAddComment }) => {
   const [newComment, setNewComment] = useState('');
   const [status, setStatus] = useMyStatus('Активний');
@@ -23,14 +23,15 @@ const CommentForm = ({ onAddComment }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Додати коментар:
+        <h3>Додати коментар:</h3>
         <input
+        className='form-coment-add'
           type="text"
           value={newComment}
           onChange={handleInputChange}
         />
       </label>
-      <button type="submit">Відправити</button>
+      <button className='btn-add' type="submit">Відправити</button>
       <p>Статус: {status}</p>
     </form>
   );

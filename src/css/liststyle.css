@@ -1,0 +1,58 @@
+/* Стилі для обгортки списку продуктів */
+.list-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(18, 144, 144);
+    border-radius: 50px;
+ 
+}
+  
+  /* Стилі для кожного продукту */
+  .prod {
+    margin-bottom: 10px;
+    padding: 30px;
+   
+  }
+  
+  /* Стилі для чекбоксу та тексту продукту */
+  .label-check {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+   
+  }
+  .label-check input[type="checkbox"] {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 5px; /* Заокруглення кутів */ 
+    appearance: none; /* Вимикаємо стандартний вигляд */
+    outline: none; /* Видаляємо обведення */
+    border: 5px solid rgb(0, 0, 0);
+    background-color: rgb(234, 234, 234); 
+  }
+  .label-check input[type="checkbox"]:checked::after {
+    content: ""; /* Додаємо контент */
+    display: block;
+    width: 10px; /* Ширина позначки */
+    height: 10px; /* Висота позначки */
+    border-radius: 50%; /* Заокруглення кутів для створення круглого вигляду позначки */
+    background-color: rgb(0, 0, 0); /* Колір позначки */
+    margin: 4px; /* Відступ позначки від границі чекбокса */
+  }
+  
+  .input-prod {
+    margin-right: 10px;
+  }
+  
+  /* Стилі для тексту продукту */
+  .product-name {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Стилі для відміченого чекбоксу */
+  .input-prod:checked + .product-name {
+    text-decoration: line-through;
+    color: #999;
+  }

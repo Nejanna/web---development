@@ -1,0 +1,35 @@
+.user-profile {
+    background-color: rgb(198, 238, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центруємо по горизонталі */
+    justify-content: center; /* Центруємо по вертикалі */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ширина контейнера */
+    max-width: 400px; /* Максимальна ширина контейнера */
+    margin: auto; /* Центруємо контейнер на сторінці */
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

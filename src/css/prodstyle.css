@@ -1,0 +1,42 @@
+.ProductPage {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: rgb(198, 238, 238);
+    border-radius: 50px;
+    
+}
+.List{
+    margin-left: 90px;
+}
+.Products{
+    margin-right: 190px;
+}  
+.select-prod{
+    font-size: 20px;
+    list-style: none;
+}
+.prod-name{
+    background-color: rgb(243, 186, 186);
+    border-radius: 90px;
+    padding: 0;
+}
+.comment{
+    font-size: 20px ;
+}
+.btn-add{
+    font-size: 20px;
+    background-color: rgb(99, 157, 252);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}  
+.form-coment-add{
+    padding: 20px;
+    border-radius: 10px;
+    background-color:rgb(226, 223, 223)
+} 
+  
+  
+
+  
